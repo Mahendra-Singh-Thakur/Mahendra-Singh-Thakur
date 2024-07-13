@@ -1,0 +1,105 @@
+#include <stdio.h>
+#include <conio.h>
+
+int main()
+{
+	long num, i, j, flag, count = 0;
+	printf("enter number : ");
+	scanf("%ld", &num);
+
+	for (j = 1; j <= num; j++)
+	{
+		flag = 0;
+		if ((j == 1) || (j == 0))
+		{
+			flag = 1;
+		}
+		for (i = 2; i <= j / 2; i++)
+		{
+			if (j % i == 0)
+			{
+				//  	printf("%ld\n",i);
+				flag = 1;
+			}
+		}
+		if (flag == 1)
+		{
+			//	printf("\n%ld is not prime number",j);
+		}
+		else
+		{
+			printf("\n%ld is prime number", j);
+			count++;
+		}
+	}
+	printf("\ncount = %ld", count);
+	return 0;
+}
+
+/*
+	clrscr();
+	int num,i,flag=0;
+	printf("enter number : ");
+	scanf("%d",&num);
+
+	if((num==1)||(num==0))
+	{
+		flag=1;
+
+	}
+	for(i=2;i<=num/2;i++)
+	{
+		if(num%i==0)
+		{
+		//  	printf("%d\n",i);
+			flag=1;
+		}
+
+	}
+	if(flag==1)
+	{
+		printf("it is not prime number");
+	}
+	else
+	{
+		printf("it is prime number");
+
+	}
+	getch();
+}
+
+
+
+{
+	clrscr();
+	int i,n,a,b,c;
+	do
+	{
+		printf("Enter number for checking either its prime or composite : ");
+		scanf("%d",&n);
+					for(i=2;i<=n/2;i++)
+					{
+						if(n%i==0)
+						{
+							a=i;
+
+						}
+
+					}
+					if(n%a!=0)
+					{
+						printf("\n%d is prime number\n",n);
+					}
+
+					else
+					{
+						printf("\n%d is composite number\n",n);
+
+					}
+			printf ("\nif you Re-check another number either its prime or composite then press : 1\n");
+			printf ("\nif you don't need to check another number then press : 2\n\n");
+
+			scanf("%d",&b);
+	}
+	while(b==1);
+} */

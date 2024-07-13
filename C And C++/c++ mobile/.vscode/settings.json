@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "monthly_interest.C": "cpp",
+        "DAYS-interest.C": "cpp",
+        "rogh.C": "cpp",
+        "real_interest_calculator.C": "cpp",
+        "mans.C": "cpp",
+        "B-A_B.C": "cpp",
+        "stdlib.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "Enabled"
+}
